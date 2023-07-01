@@ -1,0 +1,68 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Main container */
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Video container */
+#videos-container {
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Change 'space-between' to 'flex-start' */
+}
+
+/* Video card */
+.video-card {
+  width: calc(20% - 16px); /* Divide the width by 5 and subtract the margin */
+  margin: 0 8px 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Thumbnail */
+.video-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Title */
+.video-card .title {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Description */
+.video-card .description {
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Loading text */
+#videos-container:empty::before {
+  content: "Loading...";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  height: 200px;
+}

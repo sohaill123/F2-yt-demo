@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youtube Clone</title>
+  <link href="styles/index.css" rel="stylesheet" type="text/css" />
+  <link href="styles/nav.css" rel="stylesheet" type="text/css" />
+  <link href="styles/container.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="path/to/fontawesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+  <!-- navbar -->
+
+  <nav class="navbar">
+    <div class="wrapper d-flex space-between justify-content align-items">
+      <div class="navbar__left">
+        <i class="fa fa-bars navbar__left__hamburger" aria-hidden="true"></i>
+        <img src="./assets/images/logo.png" alt="youtube" width="60px" class="navbar__left__logo">
+      </div>
+      <div class="navbar__center">
+        <i class="fa fa-arrow-left navbar__center__arrow" aria-hidden="true"></i>
+
+
+        <input type="text" class="navbar__center__input" id="searchInput" placeholder="Search">
+        <button class="navbar__center__search-btn" onclick="searchVideos()"><i class="fa fa-search"
+            aria-hidden="true"></i></button>
+
+     ....
+        <i class="fa fa-microphone navbar__center__arrow" aria-hidden="true"></i>
+
+      </div>
+
+      <div class="navbar__right">
+        <i class="fa fa-search navbar__right__icon" aria-hidden="true"></i>
+        <i class="fa fa-video-camera navbar__right__icon" aria-hidden="true"></i>
+        <i class="fa fa-th navbar__right__icon" aria-hidden="true"></i>
+        <i class="fa fa-bell navbar__right__icon" aria-hidden="true"></i>
+        <i class="fa fa-user navbar__right__icon" aria-hidden="true"></i>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <a href=""><img src="./assets/Top-Menu.png" alt="" style="width: 85%; margin-left: 15%;"></a>
+
+  <!-- left container -->
+
+  <div class="sidebar">
+    <div class="shortcut-links1">
+      <a href=""><img src="./assets/Home.png" alt=""></a>
+      <a href="./explorer.html"><img src="./assets/Menu.png" alt=""></a>
+      <a href="./explorer.html"><img src="./assets/subs.png" alt=""></a>
+
+
+
+      <hr>
+    </div>
+    <div class="shortcut-links">
+      <a href=""><img src="./assets/Top-2.png" alt=""></a>
+    </div>
+    <div class="subcribed-list">
+
+      <a href=""><img src="./assets/Subscriptions.png" alt="">
+        <p>Cameron</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- container end -->
+
+  <aside></aside>
+
+  <main>
+    <div id="videos-container">Loading...</div>
+  </main>
+
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

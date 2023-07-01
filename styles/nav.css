@@ -1,0 +1,122 @@
+
+
+   /* nav bar */
+
+   *{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    transition: all 1s;
+  }
+  .wrapper {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+  /*   background: blue; */
+  }
+  .d-flex {
+    display: flex;
+  }
+  .space-between {
+    justify-content: space-between;
+  }
+  .align-items {
+    align-items: center;
+  }
+  .navbar{
+    background-color: #202020;
+    padding: 12px 10px;
+  }
+  .navbar__left{
+    display: flex;
+    align-items: center;
+  /*   background: blue; */
+    flex: 1;
+  }
+  .navbar__left__hamburger{
+    color: white;
+    font-size: 1.3em;
+  }
+  .navbar__left__logo{
+    margin-left: 2rem;
+    width: 90px;
+  }
+  
+  
+  .navbar__center{
+    display: flex;
+    justify-content: center;
+  /*   background: red; */
+    margin: 0;
+  /*   width: 50%; */
+    flex:6;
+  }
+  .navbar__center__arrow {
+    color: white;
+    font-size: 1.25rem;
+    align-self: center;
+    margin-right: 1.5rem;
+    display: none;
+  }
+  .navbar__center__input{
+    background: #121212;
+    width: 70%;
+    max-width:600px;
+    border: 1px solid #313131;
+    padding: 6px;
+    margin: 0;
+    outline: none;
+    color: #858585;
+    font-size: 1em;
+  }
+  .navbar__center__input::placeholder{
+    color: #858585;
+    padding-left: 0.2em;
+  }
+  .navbar__center__input:focus {
+    border: 1px solid #2da0ff;
+  }
+  .navbar__center__search-btn{
+    padding: 6px 30px;
+    max-width: 10%;
+    font-size: 1em;
+    background: #313131;
+    color: #858585;
+    border: none;
+    margin: 0;
+    max-width: 20%;
+  }
+  
+  .navbar__center__search-btn:hover i {
+    color: #a5a5a5;
+  }
+  
+  .navbar__right{
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar__right__icon{
+    color: white;
+    font-size: 1.25rem;
+  }
+  
+  .navbar__right__icon + .navbar__right__icon {
+    margin-left: 1.5rem;
+  }
+  
+  .fa-search.navbar__right__icon {
+      display: none;
+    }
+  
+  @media (max-width: 600px) {
+    
+  
+    .fa-search.navbar__right__icon {
+      display: inline;
+    }
+    .navbar__center {
+      display: none;
+    }
+  }
